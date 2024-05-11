@@ -85,7 +85,7 @@ backup() {
   mv "$SITE_DIR"/* "$_backup_dir"
   mv .git "$_backup_dir"
 
-  # When adding custom domain from Github website,
+  # When adding custom domain from Github website, test
   # the CANME only exist on `gh-pages` branch
   if [[ -f CNAME ]]; then
     mv CNAME "$_backup_dir"
